@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Grundlagen</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Delwin Perera">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/sky.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+                <section>
+					<h3>Grundlagen</h3>
+				</section>
+
+
+                <section>
+                    <h2>Hallo!</h2>
+                    <p>
+                        In dieser Präsentation zeigen wir Euch, wie wir
+                        Eigenschaften von Materialien im atomaren Bereich
+                        erforschen. Dazu benutzen wir den <em>Computer</em>.
+                    </p>
+                </section>
+
+                <!-- Example of nested vertical slides -->
+                <section>
+                    <h2>Wie simuliert man Atome im Computer?</h2> 
+                    <p>Wir brauchen eine mathematische Beschreibung der
+                    <em>Wechselwirkung</em> zwischen den Atomen. Dazu gibt
+                    es zwei Herangehensweisen:</p>
+                    <ul>
+                        <li>klassische Mechanik</li>
+                        <li>Quantenmechanik</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Klassische Mechanik</h2> 
+                    <p>Hier beschreiben wir zwischenatomare Wechselwirkungen
+                    über Newtonschen Gleichungen und denken uns die
+                    Atome als Kugeln.</p>
+                </section>
+                <section>
+                    <h2>Quantenmechanik</h2> 
+                    <p>Hier beschreiben wir zwischenatomare Wechselwirkungen
+                    über die Schrödinger-Gleichung. Die chemische Bindingung
+                    wird über die Valenzelektronen eingestellt.</p>
+                </section>
+                <section>
+                    <p>Das war's. Jetzt könnt Ihr weitermachen.</p>
+                    <br>
+                    <a href="index.html">
+                        <img class="r-frame" style="background: rgba(255,255,255,0.1); transform: rotate(180deg);" width="178" height="238" data-src="https://static.slid.es/reveal/arrow.png" alt="Up arrow">
+                    </a>
+                </section>
+
+            </div>
+
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+
+		</script>
+
+	</body>
+</html>
