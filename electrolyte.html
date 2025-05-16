@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Feststoffelektrolyte</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Niklas Leimeroth">
+
+		<meta name="apple-mobile-web-app-capable" content="no">
+
+		<meta name="viewport" content="width=device-width, height=device-height initial-scale=0.5">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/sky.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+                <section>
+					<h3>Festoffelektrolyte für Li Batterien</h3>
+				</section>
+
+                <section>
+					<h2>Hallo!</h2>
+					<p>
+						In dieser Präsentation zeigen wir Euch unsere Forschung zu Feststoffelektrolyten.
+					</p>
+				</section>
+                
+                <section>
+                    <h2>Li Batterien</h2> 
+                    <p>Im Prinzip bestehen Li Batterien aus zwei Elektroden (Anode und Kathode), einem Elektrolyten der Ionen, aber keine Elektronen leitet und einem Separator der den direkten Kontakt der Elektroden verhindert.
+                    </p>
+                    <img width="250" height="250" data-src="media/LiBatterySchematic.svg" />
+                </section>
+
+                <section>
+                    <h2>Feuergefahr durch Dendritenwachstum</h2>
+                    Im schlimmsten Fall können Dendriten, lange verästelte Li Strukturen, einen Kurzschluss verursachen der zum Brand führt.
+                    <p>
+                        <img height="250" data-src="media/DendriteGrowth.jpg" />
+                        <img height="250" data-src="media/BurningLaptop.png" />
+                    </p>
+                </section>
+
+                <section>
+                    <h2> Feststoffelektrolyte</h2>
+                    <p>
+                    Feststoffelektrolyte können das Wachstum von Dendriten verhindern und dadurch die Brandgefahr reduzieren. Dadurch könnten sie den Einsatz von
+                    metallischen Li Anoden erlauben und die Energiedichte erhöhen.
+                    Feststoffelektrolyte sind jedoch schwierig herzustellen und haben schlechtere Ionenleitfähigkeiten
+                    als die aktuell eingesetzten flüssigen Elektrolyte.
+                    </p>
+                </section>
+
+                <section>
+                    <h2> Verbesserte Ionenleitfähigkeit </h2>
+                    <p>
+                         Li<sub>6</sub>-P-S<sub>5</sub>-Br is ein vielversprechender Feststoffelektrolyt.
+                         Wir konnten mit Molekulardynamik Simulationen zeigen das für eine gute Leitfähigkeit
+                         Br und S im Material auf vertauschte Plätze gebracht werden müssen.
+                    </p>
+                    <div class="r-hstack">
+                        <div>
+                            <p>Br und S nicht getauscht: Li Ionen bewegen sich nur innerhalb von kleinen Bereichen</p>
+                            <img height="200" data-src="media/LiDiffusionNoSiteExchange.png" /></div>
+
+                        <div>
+                            <p>Br und S getauscht: Li Ionen können durch das komplette Material diffundieren</p>
+                            <img height="200" data-src="media/LiDiffusionWithSiteExchange.png" />
+                        </div>
+                    </div>
+                </section>
+
+            
+            </div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+                width: 1920,
+                height: 1080,
+                margin: 0.04,
+                minScale: 0.2,
+                maxScale: 2.0,
+
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+
+		</script>
+
+	</body>
+</html>
