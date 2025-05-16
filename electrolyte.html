@@ -4,15 +4,14 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>Grundlagen</title>
+		<title>Feststoffelektrolyte</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Delwin Perera">
+		<meta name="author" content="Niklas Leimeroth">
 
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="apple-mobile-web-app-capable" content="no">
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, height=device-height initial-scale=0.5">
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
@@ -66,13 +65,24 @@
                 </section>
 
                 <section>
-                    <h2> Feststoffelektrolyte</h2>
-
+                    <h2> Verbesserte Ionenleitfähigkeit </h2>
                     <p>
+                         Li<sub>6</sub>-P-S<sub>5</sub>-Br is ein vielversprechender Feststoffelektrolyt.
+                         Wir konnten mit Molekulardynamik Simulationen zeigen das für eine gute Leitfähigkeit
+                         Br und S im Material auf vertauschte Plätze gebracht werden müssen.
                     </p>
+                    <div class="r-hstack">
+                        <div>
+                            <p>Br und S nicht getauscht: Li Ionen bewegen sich nur innerhalb von kleinen Bereichen</p>
+                            <img height="200" data-src="media/LiDiffusionNoSiteExchange.png" /></div>
+
+                        <div>
+                            <p>Br und S getauscht: Li Ionen können durch das komplette Material diffundieren</p>
+                            <img height="200" data-src="media/LiDiffusionWithSiteExchange.png" />
+                        </div>
+                    </div>
                 </section>
 
-            
             
             </div>
 		</div>
@@ -92,6 +102,12 @@
 				progress: true,
 				center: true,
 				hash: true,
+                width: 1920,
+                height: 1080,
+                margin: 0.04,
+                minScale: 0.2,
+                maxScale: 2.0,
+
 
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
