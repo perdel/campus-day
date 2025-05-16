@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Silica Gläser</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Niklas Leimeroth">
+
+		<meta name="apple-mobile-web-app-capable" content="no">
+
+		<meta name="viewport" content="width=device-width, height=device-height initial-scale=0.5">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/sky.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+                <section>
+					<h3>Duktilität von Silika Gläsern</h3>
+				</section>
+                
+				<section>
+					<h2>Hallo!</h2>
+					<p>
+						In dieser Präsentation zeigen wir Euch wie ein Elektronenstrahl die Verformbarkeit von SiO<sub>2</sub> beeinflusst.
+					</p>
+				</section>
+
+				<section>
+					<h2>Silika Gläser</h2>
+					<p>
+						Gläser haben viele Einsatzzwecke, beispielsweise in optischen oder elektronischen Geräten.
+						Man kann sie in vielen Formen herstellen, beispielsweise als Fasern, Dünnschichten oder Nanopartikel.
+						Da sie bei Raumtemperatur sehr spröde sind, kann man sie jedoch schlecht mechanisch verformen.
+						Eine Möglichkeit dies zu beeinflussen sind Elektronenstrahlen. Hochenergetische Elektronen können die stabilen Si-O Bindungen zerstören und
+						so die Beweglichkeit der Atome erhöhen. Dies führt zu einer verbesserten Duktilität wie im folgenden Video gezeigt wird.
+					</p>
+				</section>
+
+                <section>
+					<p>
+						Hier seht Ihr zwei Simulationen von Gläsern. Links wird der Einfluss von Elektronenstrahlung simuliert, indem Bindungen von O Atomen mit seinen Nachbarn
+						zerstört werden (blaue Atome), rechts das unbeeinflusste Glas.
+					</p>
+					<video controls src="media/TensileTestWithWithoutSwitchingReencoded.mp4" data-autoplay></video>
+				</section>
+
+            </div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+                width: 1920,
+                height: 1080,
+                margin: 0.04,
+                minScale: 0.2,
+                maxScale: 2.0,
+
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+
+		</script>
+
+	</body>
+</html>
