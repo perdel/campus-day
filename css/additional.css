@@ -1,0 +1,13 @@
+.row {
+    display: flex;
+    gap: 3%;
+}
+.column3 {
+    flex: 30%
+}
+.column2 {
+    flex: 50%;
+}
+.column4 {
+    flex: 25%;
+}
