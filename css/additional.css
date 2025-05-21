@@ -1,8 +1,9 @@
 .row {
     display: flex;
+    gap: 3%;
 }
 .column3 {
-    flex: 33%;
+    flex: 30%
 }
 .column2 {
     flex: 50%;
