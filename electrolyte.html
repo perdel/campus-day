@@ -31,17 +31,16 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
                 <section>
-                    <h3>Feststoffelektrolyte für Li Batterien</h3>
+                    <h1>Feststoffelektrolyte für Li Batterien</h1>
                     <div class="row">
                         <div class="column3" >
+                            <h3>Hintergund</h3>
                             <p>
                                 Im Prinzip bestehen Li Batterien aus zwei Elektroden (Anode und Kathode),
                                 einem Elektrolyten der Ionen, aber keine Elektronen leitet und einem
                                 Separator der den direkten Kontakt der Elektroden verhindert.
                             </p>
                             <img height="700" data-src="media/LiBatterySchematic.svg" />
-                        </div>
-                        <div class="column3">
                             <p>
                                 Im schlimmsten Fall können Dendriten, lange verästelte Li Strukturen,
                                 den Separator zerstören und einen Kurzschluss verursachen der zum Brand führt.
@@ -49,10 +48,10 @@
                            
                             <p>
                                 <img height="350" data-src="media/DendriteGrowth.jpg" />
-                                <img height="350" data-src="media/BurningLaptop.png" />
                             </p>
                         </div>
                         <div class="column3">
+                            <p> <img height="350" data-src="media/BurningLaptop.png" /></p>
                             <p>
                             Feststoffelektrolyte können das Wachstum von Dendriten verhindern und dadurch die Brandgefahr reduzieren.
                             Dadurch könnten sie den Einsatz von
@@ -60,27 +59,72 @@
                             Feststoffelektrolyte sind jedoch schwierig herzustellen und haben schlechtere Ionenleitfähigkeiten
                             als die aktuell eingesetzten flüssigen Elektrolyte.
                             </p>
+                             <p> <img height="550" data-src="media/AllSolidStateBattery.png" /></p>
+                        </div>
+                        <div class="column3">
+                            <h3>Forschungsziel</h3>
+                            <p>
+                                -Wie erreicht man die notwendigen Ionenleitfähigkeiten?</p>
+                            
+                            <p>
+                                -Wie stabilisiert man die Elektrolyte ?
+                            </p>
+                            <p>
+                                Wir untersuchen Transportmechanismen im Volumen und an Grenzflächen von
+                                Festkörperelektrolyten mit Hilfe von Elektronenstrukturrechnungen und molekulardynamischen
+                                Computersimulationen, um Wege aufzuzeigen, wie Materialien verbessert werden können
+                            </p>
+                            <p>
+                                <p> <img height="850" data-src="media/ElectrolyteConductivities.png" /></p>
+                            </p>
                         </div>
                     </div> 
                 </section>
                     
                 <section>
-                    <h2> Verbesserte Ionenleitfähigkeit </h2>
-                    <p>
-                         Li<sub>6</sub>-P-S<sub>5</sub>-Br is ein vielversprechender Feststoffelektrolyt.
-                         Wir konnten mit Molekulardynamik Simulationen zeigen das für eine gute Leitfähigkeit
-                         Br und S im Material auf vertauschte Plätze gebracht werden müssen.
-                    </p>
-                    <div class="r-hstack">
-                        <div>
-                            <p>Br und S nicht getauscht: Li Ionen bewegen sich nur innerhalb von kleinen Bereichen</p>
-                            <img height="600" data-src="media/LiDiffusionNoSiteExchange.png" /></div>
+                    <div class="row">
+                        <div class="column2">
+                            <h2> Verbesserte Ionenleitfähigkeit </h2>
+                            <p>
+                                Li<sub>6</sub>-P-S<sub>5</sub>-Br is ein vielversprechender Feststoffelektrolyt.
+                                Wir konnten mit Molekulardynamik Simulationen zeigen das für eine gute Leitfähigkeit
+                                Br und S im Material auf vertauschte Plätze gebracht werden müssen.
+                            </p>
+                            <p>
+                                <video controls src="media/LiTransportMovie.mp4" data-autoplay height="600"></video>
+                            </p>
+                            <div class="r-hstack">
+                                <div>
+                                    <p>Br und S nicht getauscht: Li Ionen bewegen sich nur innerhalb von kleinen Bereichen</p>
+                                    <img height="600" data-src="media/LiDiffusionNoSiteExchange.png" /></div>
 
-                        <div>
-                            <p>Br und S getauscht: Li Ionen können durch das komplette Material diffundieren</p>
-                            <img height="600" data-src="media/LiDiffusionWithSiteExchange.png" />
+                                <div>
+                                    <p>Br und S getauscht: Li Ionen können durch das komplette Material diffundieren</p>
+                                    <img height="600" data-src="media/LiDiffusionWithSiteExchange.png" />
+                                </div>
+                            </div>
+                            
                         </div>
+                        <div class="column2">
+                            <h2> Li Diffusion an der Grenzfläche</h2>
+                            <p>
+                                Durch Molekulardynamik Simulationen lassen sich die Barrieren für Sprünge aus dem Elektrolyten
+                                in die Elektroden bestimmen. Dies kann beim Design der Grenzflächen und dem Verständnis von
+                                Porenbildung helfen.
+                            </p>
+                            <p>
+                                <video controls src="media/LiSolidElectrolyteInterface_reencoded.mp4" data-autoplay width="1000"></video>
+                            </p>
+                            <p>
+                                <img width="1000" data-src="media/LiInterfaceBarriers.png" />
+                            </p>
+                        </div>
+    
                     </div>
+
+
+
+                    
                 </section>
 
                 <section>
