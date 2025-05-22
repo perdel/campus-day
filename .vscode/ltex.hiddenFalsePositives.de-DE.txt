@@ -1,0 +1,1 @@
+{"rule":"GERMAN_SPELLER_RULE","sentence":"^\\QMithilfe von atomistischen Computersimulationen untersuchen wir den Einfluss \t\t\t\t\t\t\tvon Präzipitaten und Glas-Glas Grenzflächen auf die \t\t\t\t\t\t\tScherbandbildung und –ausbreitung.\\E$"}
