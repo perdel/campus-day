@@ -31,37 +31,49 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-                <section id="Grundlagen">
-                    <h2>Grundlagen der Materialmodellierung</h2>
+                <section>
+                    <h1>Grundlagen der Materialmodellierung</h1>
                     <p>
                         In dieser Präsentation zeigen wir Euch, wie wir
                         Eigenschaften von Materialien im atomaren Bereich
                         erforschen. Dazu benutzen wir Hochleistungscomputer
                     </p>
-                </section>
-
-                <!-- Example of nested vertical slides -->
-                <section>
-                    <h2>Wie simuliert man Atome im Computer?</h2> 
-                    <p>Wir brauchen eine mathematische Beschreibung der
-                    <em>Wechselwirkung</em> zwischen den Atomen. Dazu gibt
-                    es zwei Herangehensweisen:</p>
-                    <ul>
-                        <li>klassische Mechanik</li>
-                        <li>Quantenmechanik</li>
-                    </ul>
-                </section>
-                <section>
-                    <h2>Klassische Mechanik</h2> 
-                    <p>Hier beschreiben wir zwischenatomare Wechselwirkungen
-                    über Interatomare Potentiale und denken uns die
-                    Atome als Punktmassen.</p>
-                </section>
-                <section>
-                    <h2>Quantenmechanik</h2> 
-                    <p>Hier beschreiben wir zwischenatomare Wechselwirkungen
-                    über die Schrödinger-Gleichung. Die chemische Bindingung
-                    wird über die Valenzelektronen eingestellt.</p>
+                    <div class="row">
+                        <div class="column3">
+                            <h2>Wie simuliert man Atome im Computer?</h2> 
+                            <p>Wir brauchen eine mathematische Beschreibung der
+                            <em>Wechselwirkung</em> zwischen den Atomen (interatomar). Dazu gibt
+                            es zwei Herangehensweisen:</p>
+                            <ul>
+                                <li>Klassische Modelle</li>
+                                <li>Quantenmechanik</li>
+                            </ul>
+                            <img data-src="media/CompMatSciCycle.png"/>
+                        </div>
+                        <div class="column3">
+                            <h2>Klassische Modelle</h2> 
+                            <p>
+                                Hier beschreiben wir zwischenatomare Wechselwirkungen
+                                über Interatomare Potenziale und denken uns die
+                                Atome als Punktmassen. Interatomare Potentziale
+                                beschreiben die Interaktionen zwischen Atomen über
+                                analytische Gleichungen.
+                            </p>
+                            <img data-src="media/Morse-potential.svg" height="800"/>
+                        </div>
+                        <div class="column3">
+                            <h2>Quantenmechanik</h2> 
+                            <p>Hier beschreiben wir zwischenatomare Wechselwirkungen
+                            über die Dichte-Funktional-Theorie.
+                            Hierbei wird die für Vielkörpersysteme unlösbare Schrödinger Gleichung
+                            durch ein System nicht interagierender Teilchen
+                            und einen Korrekturterm approximiert.
+                            Die chemische Bindung
+                            wird über die Valenzelektronen eingestellt.</p>
+                            <img data-src="media/DFT_Picture.png" height="800"/>
+                        </div>
+                        
+                    </div>
                 </section>
 
                 <section>
