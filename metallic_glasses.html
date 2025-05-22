@@ -32,9 +32,10 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
                 <section>
-					<h3>Scherbänder in metallischen Gläsern</h3>		
+					<h1>Metallische Gläser</h1>		
 					<div class="row">
                         <div class="column3">
+							<h2>Hintergrund</h2>
 							<p>
 								Bevor wir uns daran machen Gläser zu verbessern müssen wir zunächst verstehen,
 								was Gläser im naturwissenschaftlichen Sinn überhaupt sind.
@@ -47,16 +48,22 @@
 								<div class="column2">
 									<p>
 									kristalline Struktur
-									<img height="500" data-src="media/Crystal.png" />
+									<img height="300" data-src="media/Crystal.png" />
 									</p>
 								</div>
 								<div class="column2">
 									<p>
 									amorphe Struktur
-									<img height="500" data-src="media/Glass.png" />
+									<img height="300" data-src="media/Glass.png" />
 									</p>
 								</div>
 							</div>
+							<p>
+								Metallische Gläser sind extrem elastisch und korrosionsbeständig.
+								Die Kugel im Video links besteht aus einem metallischen Glas, rechts aus kristallinem Metall.
+
+							</p>
+							<video controls src="media/MetallicGlassBouncing.mp4" height="700" data-autoplay></video>
                         </div>
                         <div class="column3">
 							<p>
@@ -66,32 +73,78 @@
 							Damit sich metallische Gläser bilden muss die Abkühlgeschwindigkeit jedoch deutlich höher sein als für Oxidgläser,
 							daher ist ihre Produktion aufwendiger.
 							</p>
-							<video controls src="media/CuZrQuenchingReencoded.mp4" data-autoplay></video>
-                        </div>
+							<video controls src="media/CuZrQuenchingReencoded.mp4" height="500" data-autoplay></video>
+							<p>
+							 	Ähnlich wie bei Oxidgläsern, wird der Einsatz metallischer Gläser durch ihr sprödes Bruchverhalten limitiert.
+								Bei ihrer Verformung entstehen Scherbänder, deren Abgleiten zum Bruch führt.
+							</p>
+							<div class="row">
+								<div class="column2">
+									<p>
+									<img height="700" data-src="media/BrokenATM.png" />
+									</p>
+								</div>
+								<div class="column3">
+									<p>
+									<img height="700" data-src="media/BrokenMG.png"/>
+									</p>
+								</div>
+							</div>
+							
+						</div>
                         <div class="column3">
-                            Metallische Gläser weisen eine hohe Festigkeit und eine, im Vergleich zu ihren kristallinen Gegenstücken,
-							hohe elastische Verformbarkeit auf.
-							Ähnlich wie Oxidgläser sind sie jedoch nicht plastisch verformbar und brechen bei Überlast.
-							Dies passiert, da sich Verformungen nicht gleichmäßig verteilen, sondern in Form von Scherbändern 
-							lokal konzentriert werden.
-							Diese mangelnde Duktilität erschwert den Einsatz metallischer Gläser erheblich,
-							da Bauteile nicht gut mechanisch bearbeitet werden können.
-							<video controls src="media/CuZrShearbandNotchedReencoded.mp4" data-autoplay></video>
+							<h2>Forschungsziel</h2>
+                            <p>
+							Mithilfe von atomistischen Computersimulationen untersuchen wir den Einfluss
+							von Präzipitaten und Glas-Glas Grenzflächen auf die
+							Scherbandbildung und –ausbreitung.
+							</p>
+							<video controls src="media/CuZrShearbandNotchedReencoded.mp4" data-autoplay height=800></video>
+							<video controls src="media/MG_PressureSimulation_reencoded.mp4" data-autoplay height=800></video>
+							
                         </div>
                 	</div>
 				</section>
 
 				<section>
-					<h2>Metallische Gläser mit erhöhter Duktilität</h2>
+					<h1>Metallische Gläser mit erhöhter Duktilität</h1>
+					<div class="row">
+						<div class="column3">
+							<p>
+								Um die plastische Verformbarkeit von metallischen Gläsern zu verbessern, gibt es verschiedene Ansätze.
+								Ein vielversprechender ist, durch eine Temperaturbehandlung kristalline Einschlüsse im Glas zu erzeugen.
+								Diese können Scherbänder aufhalten oder Energie die bei der Verformung frei wird aufnehmen.
+							</p>
+							<img height="500" data-src="media/SheaBandPrecipitateMechanisms.png"/>
+							<p> Präzipitat mit 20nm Durchmesser</p>
+							<video controls src="media/ShearBandPrecipitate20nm.mp4" data-autoplay height="700"></video>
+							
+
+						</div>
+						<div class="column3">
+							<p> Präzipitat mit 38nm Durchmesser</p>
+							<video controls src="media/ShearBandPrecipitate38nm.mp4" data-autoplay height="700"></video>
+							<p>
+								Ein spezieller Fall sind Einschlüsse, bei denen durch die Wechselwirkungen mit Scherbändern eine martensitische Phasenumwandlung stattfindet.
+								Hierdurch können besonders große Deformationen aufgenommen werden. Diese konnten wir mithilfe von Molekulardynamik Simulationen beobachten und verstehen.
+								Im Video sind links lokale Verformung zu sehen, rechts eine Farbkodierung für unterschiedliche Kristallstrukturen.</p>
+							<video controls src="media/CuZrInclusionVideo.mp4" data-autoplay height="700"></video>
+						</div>
+						<div class="column3">
+							<p>Eine andere Variante sind Gläser die durch pressen aus Nanopartikeln hergestellt werden.</p>
+							<video controls src="media/NanoGlassCompaction_reencoded.mp4" data-autoplay height="700"></video>
+							<p>In diesen können Scherbänder durch die Korngrenzartigen Strukturen nicht durch das komplette Material wandern.</p>
+							<video controls src="media/NanoGlassVsBMG_reencoded.mp4" data-autoplay height="700"></video>
+						</div>
+					</div>
+
+
 					<p>
-						Um die plastische Verformbarkeit von metallischen Gläsern zu verbessern, gibt es verschiedene Ansätze.
-						Ein vielversprechender ist, durch eine Temperaturbehandlung kristalline Einschlüsse im Glas zu erzeugen.
-						Diese können Scherbänder aufhalten oder Energie die bei der Verformung frei wird aufnehmen.
-						Ein spezieller Fall sind Einschlüsse, bei denen durch die Wechselwirkungen mit Scherbändern eine martensitische Phasenumwandlung stattfindet.
-						Hierdurch können besonders große Deformationen aufgenommen werden. Diese konnten wir mithilfe von Molekulardynamik Simulationen beobachten und verstehen.
-						Im Video sind links lokale Verformung zu sehen, rechts eine Farbkodierung für unterschiedliche Kristallstrukturen.
+						
+						
+						
 					</p>
-					<video controls src="media/CuZrInclusionVideo.mp4" data-autoplay height="700"></video>				
+									
 				</section>
 				
 				<section>
