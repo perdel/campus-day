@@ -3,3 +3,5 @@ Scherbändern
 martensitische
 Abgleitung
 Scherbandbildung
+Dotanden
+Perowskite
