@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Perowskite</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Delwin Perera">
+
+		<meta name="apple-mobile-web-app-capable" content="no">
+
+		<meta name="viewport" content="width=device-width, height=device-height initial-scale=0.5">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/sky.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+        <!-- additional stuff for grid layouts-->
+        <link rel="stylesheet" href="css/additional.css" />
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+			
+				<div class="slides">
+                <section>
+                    <h1>Domänenwände in ferroelektrischen Materialien</h1>
+                    <div class="row">
+                        <div class="column3">
+							<h2>Hintergrund</h2>
+							<p>
+								<ul>
+									<li>In der Raum­temperatur‑Phase von BaTiO₃ (tetragonal) erzeugt die spontane Polarisation (P) entlang der c‑Achse.</li>
+									<li>Domänenwände sind die Grenzflächen zwischen Bereichen („Domänen“), deren elektrische Polarisationsvektoren in unterschiedliche Richtungen zeigen.</li>
+									<li>In einem einfachen tetragonalen Kristall (z. B. BaTiO₃) sind die beiden energieärmsten neutralen Domänenwände:</li>
+									<ul>
+										<li>180°-Wände (die Polarisation kehrt ihre Richtung exakt um) auf den {100}-Ebenen</li>
+										<li>90°-Wände (die Polarisation dreht sich um rechtwinklige 90°) auf den {110}-Ebenen</li>
+									</ul>
+								</ul>
+							</p>
+							<img height="600" data-src="media/dw-setup.png" alt="Perowskit Struktur">
+                        </div>
+                        <div class="column3">
+							<h2>Anwendungen (Piezoelektrika und Aktuatoren)</h2>
+							<img data-src="media/actuator.png" height="600"/>
+                        </div>
+                        <div class="column3">
+                            <h2>Forschungsziel</h2>
+							 <p>
+								<ul>
+									<li>Welche Domänenstruktur weist die geringste Bildungsenergie auf?</li>
+									<li>Ferroelektische Materialien werden häufig dotiert, um ihre Eigenschaften zu verbessern, wodurch Defekte wie Leerstellen entstehen. Wie interagieren Domänenwände mit diesen Defekten?</li>
+									<li>Stoßen Domänenwände solche Defekte ab oder absorbieren sie sie?</li>
+								</ul>
+							</p>
+							<img data-src="media/dw-180.png" height="400"/>
+							<img data-src="media/dw-90.png" height="400"/>
+						</div>
+                    </div>
+                </section>
+
+				<div class="slides">
+                <section>
+                        	<p>
+								In tetragonalen ABO₃ Perwoskiten wie PbTiO₃ and
+								BaTiO₃, werden die Ti⁴⁺-Kationen (blaue Kugeln)
+								und die O²⁻ Anionen (gelbe Kugeln) relativ
+								zueinander verschoben.  Dadurch entsteht eine
+								effektive Polarisation, die ihre Richtung
+								entlang der Domänenwand (in der Mitte der
+								Gitterzelle) umkehrt.
+							</p>
+                    <div class="row">
+                        <div class="column2">
+							<video src="media/O-displacement.mp4" controls data-autoplay height="1000"></video>
+                        </div>
+                        <div class="column2">
+							<video src="media/Ti-displacement.mp4" controls data-autoplay height="1000"></video>
+                        </div>
+
+                    </div>
+                </section>
+
+
+				<section>
+                    <p>Das war's. Jetzt könnt Ihr weitermachen.</p>
+                    <br>
+                    <a href="index.html">
+                        <img class="r-frame" style="background: rgba(255,255,255,0.1);" width="178" height="178" data-src="assets/home-button-svgrepo-com.svg" alt="go to overview">
+                    </a>
+                </section>
+
+            </div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+                width: 3480,
+                height: 2160,
+                margin: 0.04,
+                minScale: 0.2,
+                maxScale: 2.0,
+
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+
+		</script>
+
+	</body>
+</html>
