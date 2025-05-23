@@ -1,133 +1,149 @@
-<!--LTeX: language=de-DE -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=3480, initial-scale=1.0, height=2160" />  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Open Campus Day </title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Optional smoother layout fix for column gaps */
+    .masonry {
+      column-gap: 0.5rem;
+    }
+    .masonry-item {
+      break-inside: avoid;
+    }
+  </style>
 </head>
-<body class="bg-orange-100 font-sans">
+<body class="bg-white">
 
   <div class="max-w-9/10 mx-auto py-10 px-4 max-h-full">
-    <h1 class="text-3xl font-bold text-center mb-10">📚 Open Campus Day</h1>
-    <div class="grid grid-cols-8 gap-10" style="margin-bottom:2cm;">
+    <div class="grid grid-cols-7 gap-10" style="margin-bottom:1cm;">
       <div> </div>
       <div> </div>
       <div> </div>
-      <div class="bg-white shadow-lg rounded-lg p-6">
-        <img src="assets/tuda_logo_RGB.svg" alt="TuDa logo" height="10" >
-      </div>
       <img src="assets/MMLOGO_GER_RELAUNCH_3.png" alt="MM logo" height="50">
       <div> </div>
       <div> </div>
       <div> </div>
     </div>
 
-<!-- Presentations -->   
+  <div class="masonry columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-2 p-2">
 
-    <h1 class="text-2xl font-bold text-center mb-10">Aktuelle Forschung</h1>
-    <!-- <div class="flex flex-col items-center gap-6 p-7 md:flex-row md:gap-8"> -->
-    <div class="grid grid-cols-8 gap-6 w-full" style="margin-bottom:2cm;"> 
-      
-      <!-- Notebook Tile -->
-      <a class="bg-white shadow-lg rounded-lg p-6" href="grundlagen.html"
-          target="_self">
-        <h2 class="text-xl font-semibold mb-2">Grundlagen</h2>
-        <p class="text-gray-700 mb-4">
-        Hier lernt ihr mehr darüber wie Materialien in atomarer Dimension modelliert werden.
-        </p>
-      </a>
+    <!-- Masonry Tile -->
+    <a href="solar_cell.html" class="block mb-2 masonry-item relative group overflow-hidden rounded">
+      <img src="media/thin-film.jpeg"
+           alt="Tile 1"
+           class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105" />
+      <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition duration-300"></div>
+      <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+        <p class="text-white text-lg font-semibold">Solarzellen</p>
+      </div>
+    </a>
 
+    <!-- More Tiles -->
+    <a href="electrolyte.html" class="block mb-2 masonry-item relative group overflow-hidden rounded">
+      <img src="media/BurningLaptop.png"
+           alt="Tile 2"
+           class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105" />
+      <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition duration-300"></div>
+      <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+        <p class="text-white text-lg font-semibold">Elektrolyte</p>
+      </div>
+    </a>
 
-      <!-- Notebook Tile -->
-      <a class="bg-white shadow-lg rounded-lg p-6" href="solar_cell.html"
-          target="_self">
-        <h2 class="text-xl font-semibold mb-2">🌞 Solarzellen</h2>
-        <p class="text-gray-700 mb-4">
-        <img src="media/CIGS_SolarCell.jpg" alt="Verformung von Silkat Gläser" style="height:150px; width:auto; display:block; margin-left:auto; margin-right: auto;"/>
-        </p>
-      </a>
+    <a href="hea.html" class="block mb-2 masonry-item relative group overflow-hidden rounded">
+      <img src="media/mixing.png"
+           alt="Tile 3"
+           class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105" />
+      <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition duration-300"></div>
+      <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+        <p class="text-white text-lg font-semibold">Mechanisches Mischen</p>
+      </div>
+    </a>
 
-      <!-- Notebook Tile -->
-      <a class="bg-white shadow-lg rounded-lg p-6" href="hea.html"
-          target="_self">
-        <h2 class="text-xl font-semibold mb-2">🔧 Hochentropielegierungen</h2>
-        <img src="media/hea_structures.svg" alt="Verformung von Silkat Gläser" style="height:150px; width:auto; display:block; margin-left:auto; margin-right: auto;"/>
-        <br>
-      </a>
+    <a href="grundlagen.html" class="block mb-2 masonry-item relative group overflow-hidden rounded">
+      <img src="media/blackboard.jpeg"
+           alt="Tile 4"
+           class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105" />
+      <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition duration-300"></div>
+      <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+        <p class="text-white text-lg font-semibold">Grundlagen</p>
+      </div>
+    </a>
 
-      <a class="bg-white shadow-lg rounded-lg p-6" href="electrolyte.html"
-          target="_self">
-        <h2 class="text-xl font-semibold mb-2">🔋 Feststoffelektrolyte</h2>
-        <img src="media/BurningLaptop.png" alt="Verformung von Silkat Gläser" style="height:150px; width:auto; display:block; margin-left:auto; margin-right: auto;"/>
-      </a>
+    <a href="metallic_glasses.html" class="block mb-2 masonry-item relative group overflow-hidden rounded">
+      <img src="media/Glass.png"
+           alt="Tile 5"
+           class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105" />
+      <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition duration-300"></div>
+      <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+        <p class="text-white text-lg font-semibold">Metallische Gläser</p>
+      </div>
+    </a>
 
-      <a class="bg-white shadow-lg rounded-lg p-6" href="silica_glasses.html"
-          target="_self">
-        <h2 class="text-xl font-semibold mb-2">🔧 Silikat Gläser</h2>
-        <img src="media/broken-glass.jpg" alt="Verformung von Silkat Gläser" style="height:150px; width:auto; display:block; margin-left:auto; margin-right: auto;"/>
-        <br>      
-      </a>
+    <a href="silica_glasses.html" class="block mb-2 masonry-item relative group overflow-hidden rounded">
+      <img src="media/broken-glass.jpg"
+           alt="Tile 6"
+           class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105" />
+      <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition duration-300"></div>
+      <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+        <p class="text-white text-lg font-semibold">Silikatgläser</p>
+      </div>
+    </a>
 
-      <a class="bg-white shadow-lg rounded-lg p-6 " href="metallic_glasses.html"
-          target="_self">
-        <h2 class="text-xl font-semibold mb-2">🔧 Metallische Gläser</h2>
-          <img src="media/Cu64Zr36.png" alt="Deformation metallischer Gläser" style="height:150px; width:auto; display:block; margin-left:auto; margin-right: auto;"/>
-        <br>
-      </a>
+    <a href="perowskites.html" class="block mb-2 masonry-item relative group overflow-hidden rounded">
+      <img src="media/Perowskit.webp"
+           alt="Tile 7"
+           class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105" />
+      <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition duration-300"></div>
+      <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+        <p class="text-white text-lg font-semibold">Defekte in Perowskiten</p>
+      </div>
+    </a>
 
-      <a class="bg-white shadow-lg rounded-lg p-6" href="perowskites.html"
-          target="_self">
-        <h2 class="text-xl font-semibold mb-2">🌞 Defekte in Perowskiten</h2>
-        <img src="media/Perowskit.webp" alt="Verformung von Silkat Gläser" style="height:150px; width:auto; display:block; margin-left:auto; margin-right: auto;"/>
-        <br>
-      </a>
-    </div>
+    <a href="http://130.83.182.100:8501" class="block mb-2 masonry-item relative group overflow-hidden rounded">
+      <img src="media/allen-cahn.png"
+           alt="Tile 8"
+           class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105" />
+      <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition duration-300"></div>
+      <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+        <p class="text-white text-lg font-semibold">Allen-Cahn-Gleichung simulieren</p>
+      </div>
+    </a>
 
+    <a href="polarisation.html" class="block mb-2 masonry-item relative group overflow-hidden rounded">
+      <img src="media/pto.png"
+           alt="Tile 9"
+           class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105" />
+      <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition duration-300"></div>
+      <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+        <p class="text-white text-lg font-semibold">Domänenwände</p>
+      </div>
+    </a>
 
-<!-- Interactive Simulations -->
+    <a href="http://130.83.182.100:8502" class="block mb-2 masonry-item relative group overflow-hidden rounded">
+      <img src="media/cahn-hilliard.png"
+           alt="Tile 10"
+           class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105" />
+      <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition duration-300"></div>
+      <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+        <p class="text-white text-lg font-semibold">Cahn-Hilliard-Gleichung simulieren</p>
+      </div>
+    </a>
 
-    <h1 class="text-2xl font-bold text-center mb-10">Interaktive Simulationen</h1>
-    <div class="grid grid-cols-8 gap-6">
+    <a href="http://130.83.182.100:8503" class="block mb-2 masonry-item relative group overflow-hidden rounded">
+      <img src="media/mc.png"
+           alt="Tile 11"
+           class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105" />
+      <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition duration-300"></div>
+      <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+        <p class="text-white text-lg font-semibold">Monte-Carlo-Simulation</p>
+      </div>
+    </a>
 
-      <div> </div>
-      <div> </div>
+    <!-- Add as many as needed -->
 
-      <!-- Notebook Tile -->
-      <a class="bg-white shadow-lg rounded-lg p-6" href="http://130.83.182.98:8502"
-          target="_self">
-        <h2 class="text-xl font-semibold mb-2">📘 Allen-Cahn</h2>
-        <p class="text-gray-700 mb-4">
-          Hier könnt Ihr sehen, wie sich die Mikrostruktur entwickelt.
-        </p>
-        <br>
-      </a>
-
-      <!-- Notebook Tile -->
-      <a class="bg-white shadow-lg rounded-lg p-6"  href="http://130.83.182.98:8503"
-          target="_self">
-        <h2 class="text-xl font-semibold mb-2">📘 Cahn-Hilliard</h2>
-        <p class="text-gray-700 mb-4">
-          Hier könnt Ihr sehen, wie spinodale Entmischung abläuft.
-        </p>
-        <br>
-      </a>
-
-
-      <!-- Notebook Tile -->
-      <a class="bg-white shadow-lg rounded-lg p-6" href="http://130.83.182.98:8504"
-          target="_self">
-        <h2 class="text-xl font-semibold mb-2">📘 2D Ising Modell</h2>
-        <p class="text-gray-700 mb-4">
-          Hier könnt Ihr sehen, wie sich der Spin von Elektronen im Magnetfeld verhält.
-        </p>
-        <br>
-      </a>
-      <div> </div>
-      <div> </div>
-
-    </div>
   </div>
 
 </body>
